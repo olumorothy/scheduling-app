@@ -10,6 +10,7 @@ export default function Login() {
     e.preventDefault();
     if (username.trim() && password.trim()) {
       console.log({ username, password });
+      navigate("/dashboard");
       setPassword("");
       setUsername("");
     }
